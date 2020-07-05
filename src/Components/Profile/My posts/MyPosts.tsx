@@ -3,6 +3,7 @@ import s from './MyPosts.module.css'
 import Post from "./Post/Post";
 
 
+
 export function MyPosts() {
     return (
         <div className={s.item}>my posts
@@ -11,10 +12,9 @@ export function MyPosts() {
                 <button>Add post</button>
             </div>
             <div className={s.posts}>
-               <Post/>
-               <Post/>
-               <Post/>
-               <Post/>
+               <Post message = 'It is my first post'/>
+               <Post message = 'Hi, how are you?'/>
+
             </div>
         </div>)
 
