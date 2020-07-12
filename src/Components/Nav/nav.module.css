@@ -3,11 +3,14 @@
 .nav {
     grid-area: n;
     background-color: #121313;
+    padding: 20px;
 }
 
-.item {
-    color:white;
+.item a   {
+    color: white;
+    text-decoration: none;
 }
-.item.active {
-    color: red;
+.item a.active {
+    font-weight: bolder;
+    color: #0f43e7;
 }
