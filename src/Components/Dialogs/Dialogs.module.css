@@ -1,0 +1,13 @@
+.dialogs { display: grid;
+
+grid-template-columns: 2fr 5fr 3fr 2fr}
+.dialog {color: white;
+padding: 10px}
+.dialog.active {color: #0f43e7;
+font-weight:bold}
+.messages { padding: 5px;
+}
+.message {color:white; padding: 10px}
+.answers {}
+.answer {padding: 10px;
+border-radius: 10px}
