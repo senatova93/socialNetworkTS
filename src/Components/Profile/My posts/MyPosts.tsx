@@ -6,11 +6,16 @@ import Post from "./Post/Post";
 
 export function MyPosts() {
     return (
-        <div className={s.item}>my posts
+
+        <div className={s.postBlock}>
+            <h3>my posts </h3>
             <div>
-                <textarea></textarea>
-                <button>Add post</button>
+                <div> <textarea></textarea></div>
+              <div> <button>Add post</button></div>
+
             </div>
+
+
             <div className={s.posts}>
                <Post message = 'It is my first post' likesCount = 's'/>
                <Post message = 'Hi, how are you?' likesCount = 'v'/>
