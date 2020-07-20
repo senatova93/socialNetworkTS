@@ -3,6 +3,7 @@ import s from './ProfileInfo.module.css'
 
 
 export function ProfileInfo() {
+
     return (
         <div className={s.content}>
             <img src ='https://www.rgo.ru/sites/default/files/styles/full_view/public/umpyr-582.jpg?itok=FMZhVUpM'/>

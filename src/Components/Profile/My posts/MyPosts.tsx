@@ -1,10 +1,20 @@
 import React from 'react'
 import s from './MyPosts.module.css'
 import Post from "./Post/Post";
+import {PostType} from "../profile";
+
+type PropsType = {
+   posts: Array<PostType>
+}
+
+export function MyPosts(props:PropsType) {
+
+    let PostElements = props.posts.map (post => <Post message = {post.message} id={post.id}/>)
 
 
 
-export function MyPosts() {
+
+
     return (
 
         <div className={s.postBlock}>
@@ -17,8 +27,7 @@ export function MyPosts() {
 
 
             <div className={s.posts}>
-               <Post message = 'It is my first post' likesCount = 's'/>
-               <Post message = 'Hi, how are you?' likesCount = 'v'/>
+                {PostElements}
 
             </div>
         </div>)
